@@ -59,6 +59,7 @@ class UsersTable extends Table
 
         $validator
             ->integer('sex')
+            ->inList('sex', [1, 2, 3])
             ->requirePresence('sex', 'create')
             ->notEmptyString('sex');
 
