@@ -32,7 +32,5 @@ class User extends Entity
         'sogi' => true,
         'phone' => true,
         'email' => true,
-        'created' => true,
-        'modified' => true,
     ];
 }
