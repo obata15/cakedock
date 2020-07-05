@@ -15,6 +15,8 @@
                 <?= $this->Html->link('Detail', ['action' => 'view', $user->id]) ?>
                 /
                 <?= $this->Html->link('Edit', ['action' => 'edit', $user->id]) ?>
+                /
+                <?= $this->Form->postLink('Delete', ['action' => 'delete', $user->id], ['confirm' => 'Are you sure?']) ?>
             </td>
             <td><?= $user->name ?></td>
             <td><?= $user->phone ?></td>
