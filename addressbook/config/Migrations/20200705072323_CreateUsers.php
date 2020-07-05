@@ -23,7 +23,7 @@ class CreateUsers extends AbstractMigration
             'limit' => 11,
             'null' => false,
         ]);
-        $table->addColumn('sex_description', 'string', [
+        $table->addColumn('sogi', 'string', [
             'default' => null,
             'limit' => 255,
             'null' => true,

@@ -22,7 +22,7 @@ class UsersSeed extends AbstractSeed
             [
                 'name' => 'Shinsuke Obata',
                 'sex' => 1,
-                'sex_description' => null,
+                'sogi' => null,
                 'phone' => '+819061496245',
                 'email' => 'info@studio15.jp',
                 'created' => date('Y-m-d H:i:s'),
