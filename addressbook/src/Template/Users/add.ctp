@@ -9,7 +9,7 @@
 <?= $this->Form->control('sogi', ['label' => '(Sexual Orientation / Gender Identity)']) ?>
 <?= $this->Form->control('phone') ?>
 <?= $this->Form->control('email') ?>
-<?= $this->Form->button(__('Save')) ?>
+<?= $this->Form->button('Save') ?>
 <?= $this->Form->end() ?>
 
 <a href="/">Back to Home</a>
