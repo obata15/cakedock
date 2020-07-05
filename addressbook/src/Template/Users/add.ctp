@@ -11,5 +11,3 @@
 <?= $this->Form->control('email') ?>
 <?= $this->Form->button('Save') ?>
 <?= $this->Form->end() ?>
-
-<a href="/">Back to Home</a>

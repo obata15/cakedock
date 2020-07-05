@@ -52,6 +52,9 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('content') ?>
     </div>
     <footer>
+        <?php if ($this->request->here !== '/') : ?>
+            <a href="/">Back to Home</a>
+        <?php endif ?>
     </footer>
 </body>
 </html>

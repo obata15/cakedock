@@ -32,5 +32,3 @@
         <td><?= $user->modified ?></td>
     </tr>
 </table>
-
-<a href="/">Back to Home</a>
