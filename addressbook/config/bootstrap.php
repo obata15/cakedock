@@ -201,3 +201,21 @@ Type::build('timestamp')
 //Inflector::rules('irregular', ['red' => 'redlings']);
 //Inflector::rules('uninflected', ['dontinflectme']);
 //Inflector::rules('transliteration', ['/å/' => 'aa']);
+
+/*
+ * Constant Configuration
+ */
+Configure::write('Users.sex', [
+    [
+        'id' => 1,
+        'name' => 'Man',
+    ],
+    [
+        'id' => 2,
+        'name' => 'Woman',
+    ],
+    [
+        'id' => 3,
+        'name' => 'Other',
+    ],
+]);

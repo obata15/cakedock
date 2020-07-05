@@ -12,7 +12,7 @@
     <tr>
         <th>Sex (Sexual Orientation / Gender Identity)</th>
         <td>
-            <?= $user->sex ?>
+            <?= $sexOptions[$user->sex] ?>
             <?= $user->sogi ? "( $user->sogi )" : '' ?>
         </td>
     </tr>

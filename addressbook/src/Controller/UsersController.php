@@ -2,6 +2,9 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Core\Configure;
+use Cake\Event\Event;
+use Cake\Utility\Hash;
 
 class UsersController extends AppController
 {
@@ -11,6 +14,13 @@ class UsersController extends AppController
             'Users.id' => 'desc',
         ],
     ];
+
+    public function beforeFilter(Event $event)
+    {
+        $sexOptions = Hash::combine(Configure::read('Users.sex'), '{n}.id', '{n}.name');
+        $this->set(compact('sexOptions'));
+        parent::beforeFilter($event);
+    }
 
     public function index()
     {

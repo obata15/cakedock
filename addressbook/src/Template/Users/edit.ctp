@@ -4,7 +4,7 @@
 <?= $this->Form->control('name') ?>
 <fieldset>
     <legend>Sex</legend>
-    <?= $this->Form->radio('sex', [1 => 'man', 2 => 'woman', 3 => 'other']) ?>
+    <?= $this->Form->radio('sex', $sexOptions) ?>
 </fieldset>
 <?= $this->Form->control('sogi', ['label' => '(Sexual Orientation / Gender Identity)']) ?>
 <?= $this->Form->control('phone') ?>
