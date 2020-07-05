@@ -71,6 +71,10 @@ class UsersTable extends Table
         $validator
             ->scalar('phone')
             ->maxLength('phone', 255)
+            ->add('phone', 'validFormat', [
+                'rule' => ['custom', '/^[0-9+]+$/'],
+                'message' => 'Please enter phone number with numeric and plus sign'
+            ])
             ->requirePresence('phone', 'create')
             ->notEmptyString('phone');
 
