@@ -32,4 +32,18 @@ class UsersController extends AppController
         }
         $this->set(compact('user'));    
     }
+
+    public function edit($id = 0)
+    {
+        $user = $this->Users->findById($id)->firstOrFail();
+        if ($this->request->is(['post', 'put'])) {
+            $this->Users->patchEntity($user, $this->request->getData());
+            if ($this->Users->save($user)) {
+                $this->Flash->success('Updated');
+                return $this->redirect(['action' => 'index']);
+            }
+            $this->Flash->error('Failed');
+        }
+        $this->set(compact('user'));    
+    }
 }
