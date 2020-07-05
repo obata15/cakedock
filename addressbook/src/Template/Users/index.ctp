@@ -1,3 +1,5 @@
+<?= $this->Html->link('Add', ['action' => 'add'], ['class'=> 'button', 'style' => 'float:right']) ?>
+
 <h1>AddressBook</h1>
 
 <table>
