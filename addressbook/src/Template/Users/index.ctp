@@ -24,3 +24,8 @@
         </tr>
     <?php endforeach ?>
 </table>
+
+<ul class="pagination">
+    <?= $this->Paginator->prev('< Prev'); ?>
+    <?= $this->Paginator->next('Next >'); ?>
+</ul>

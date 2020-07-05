@@ -5,10 +5,17 @@ use App\Controller\AppController;
 
 class UsersController extends AppController
 {
+    public $paginate = [
+        'limit' => 10,
+        'order' => [
+            'Users.id' => 'desc',
+        ],
+    ];
+
     public function index()
     {
         $this->loadComponent('Paginator');
-        $users = $this->Paginator->paginate($this->Users->find());
+        $users = $this->paginate($this->Users);
         $this->set(compact('users'));
     }
 
