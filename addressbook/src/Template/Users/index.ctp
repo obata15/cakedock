@@ -18,9 +18,9 @@
                 /
                 <?= $this->Form->postLink('Delete', ['action' => 'delete', $user->id], ['confirm' => 'Are you sure?']) ?>
             </td>
-            <td><?= $user->name ?></td>
-            <td><?= $user->phone ?></td>
-            <td><?= $user->email ?></td>
+            <td><?= h($user->name) ?></td>
+            <td><?= h($user->phone) ?></td>
+            <td><?= h($user->email) ?></td>
         </tr>
     <?php endforeach ?>
 </table>

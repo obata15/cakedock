@@ -1,4 +1,4 @@
-<h1>Edit (ID:<?= $user->id ?>)</h1>
+<h1>Edit (ID:<?= h($user->id) ?>)</h1>
 
 <?= $this->Form->create($user) ?>
 <?= $this->Form->control('name') ?>
