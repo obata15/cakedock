@@ -208,11 +208,11 @@ Type::build('timestamp')
 Configure::write('Users.sex', [
     [
         'id' => 1,
-        'name' => 'Man',
+        'name' => 'Male',
     ],
     [
         'id' => 2,
-        'name' => 'Woman',
+        'name' => 'Female',
     ],
     [
         'id' => 3,
